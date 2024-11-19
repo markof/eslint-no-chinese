@@ -2,7 +2,8 @@
   "name": "@markof/eslint-no-chinese",
   "version": "1.0.0",
   "description": "eslint plugin to forbid chinese",
-  "keywords": [],
+  "keywords": ["eslint", "eslint-plugin", "chinese"],
+  "repository": "https://github.com/markof/eslint-no-chinese",
   "author": "Markof",
   "main": "lib/index.js",
   "scripts": {
