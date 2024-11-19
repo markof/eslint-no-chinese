@@ -1,7 +1,7 @@
 const RuleTester = require("eslint").RuleTester
 var ruleTester = new RuleTester()
 const ruleNoChineseCode = require("../lib/rules/no-chinese-code")
-const ruleNoChineseComments = require("../lib/rules/no-chinese-comments")
+const ruleNoChineseComments = require("../lib/rules/no-chinese-comment")
 const ruleNoChineseConsole = require("../lib/rules/no-chinese-console")
 
 ruleTester.run("no-chinese-code", ruleNoChineseCode, {
@@ -34,7 +34,7 @@ ruleTester.run("no-chinese-console", ruleNoChineseConsole, {
   ],
 })
 
-ruleTester.run("no-chinese-comments", ruleNoChineseComments, {
+ruleTester.run("no-chinese-comment", ruleNoChineseComments, {
   valid: [`// this is a comment`, `/* this is a comment */`],
   invalid: [
     {
