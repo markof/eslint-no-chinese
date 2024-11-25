@@ -1,8 +1,12 @@
 {
   "name": "@markof/eslint-plugin-no-chinese",
-  "version": "1.0.3",
+  "version": "1.0.8",
   "description": "eslint plugin to forbid chinese",
-  "keywords": ["eslint", "eslint-plugin", "chinese"],
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "chinese"
+  ],
   "repository": "https://github.com/markof/eslint-plugin-no-chinese",
   "author": "Markof",
   "main": "lib/index.js",
@@ -11,7 +15,9 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "requireindex": "^1.2.0"
+    "@eslint/js": "^9.15.0",
+    "requireindex": "^1.2.0",
+    "typescript-eslint": "^8.15.0"
   },
   "devDependencies": {
     "eslint": "^8.0.1",
